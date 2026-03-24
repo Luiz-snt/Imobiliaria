@@ -1,0 +1,24 @@
+﻿@model List<Imovel.Customer>
+
+<h1>Flores</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>TIPO</th>
+            <th>ACORDO</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Imovel in Model)
+        {
+            <tr>
+                <td>@Imovel.Id</td>
+                <td>@Imovel.Name</td>
+                <td>@Imovel.Tipo</td>
+                <td>@Imovel.Acordo</td>
+            </tr>
+        }
+    </tbody>
+</table>
